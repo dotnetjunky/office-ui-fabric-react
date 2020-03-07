@@ -1,5 +1,5 @@
 {
-  "name": "office-ui-fabric-react",
+  "name": "@dotnetjunky/office-ui-fabric-react",
   "version": "7.99.0",
   "description": "Reusable React components for building experiences for Office 365.",
   "main": "lib-commonjs/index.js",
@@ -13,7 +13,10 @@
   "typings": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OfficeDev/office-ui-fabric-react"
+    "url": "https://github.com/dotnetjunky/office-ui-fabric-react"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "license": "MIT",
   "scripts": {
