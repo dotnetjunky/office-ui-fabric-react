@@ -352,7 +352,10 @@ export class ContextualMenuBase extends BaseComponent<IContextualMenuProps, ICon
                     items,
                     totalItemCount,
                     hasCheckmarks,
-                    hasIcons
+                    hasIcons,
+                    defaultMenuItemRenderer: (_items, _index, _focusableElementIndex, _totalItemCount, _hasCheckmarks, _hasIcons) => {
+                      return this._renderMenuItem(_items, _index, _focusableElementIndex, _totalItemCount, _hasCheckmarks, _hasIcons);
+                    }
                   },
                   this._onRenderMenuList
                 )}
